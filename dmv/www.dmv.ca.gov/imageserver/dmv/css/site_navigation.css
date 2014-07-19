@@ -1,0 +1,39 @@
+/* Navigation - Mini Nav */
+
+/* Nav panel */
+
+.nav_panel {
+	display:none;
+	position:absolute;
+	width:906px; /* 936 - 10 - 20 */
+	left:0px;
+	padding:9px 10px 0 20px;
+	overflow:visible;
+	background:#e5e5e5 url(../images/site/common/nav_shadow.png) repeat-x;
+	border-bottom:4px solid #cccccc;
+}
+
+.nav_panel ul {
+	float:left;
+}
+#navigation .nav_panel li {
+	float:left;
+	background:transparent url(../images/site/content/bullet_blue_disc.png) no-repeat 0 1px;
+	padding:0 0px 4px 18px;
+	margin-right:10px;
+}
+#navigation li:hover .nav_panel {
+	display:block;
+	z-index:2;
+}
+
+.nav_panel a {
+	color:#003366;
+	white-space:nowrap; /* fix IE8 comp mode issue where nav text wraps */
+}
+
+
+ #main_content {
+	padding: 0 0 0 0; /* reserve space for ribbon */
+	
+}

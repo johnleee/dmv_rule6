@@ -1,0 +1,20 @@
+
+#footer_1a {
+	width:936px;
+	margin:0 auto;
+	color:#eaeaea;
+	font-weight:bold;
+}
+#footer_1b {
+	width:936px;
+	padding:50px 0 0 0;
+}
+#footer_1b .footer_links {
+	text-align:center;
+	padding:10px 0 0 0;
+}
+
+#footer_1b a {
+	color:#eaeaea;
+	padding:0 5px;
+}

@@ -1,0 +1,64 @@
+/*--------------------------------------------------*/
+/*  block_with_rounded_corners                      */
+/*  Adds rounded corners and blue bar for heading   */
+/*--------------------------------------------------*/
+
+.block_with_rounded_corners {
+ width:97%;
+ background:#ECECE7;
+ border-style:solid;
+ border-color:#5d7493;
+ border-width:0 1px 1px 1px;
+ position:relative; /* Make this the containing block of the corner spans */
+ margin-top:16px;
+}
+
+.block_with_rounded_corners h3 {
+ background:#5d7493;
+ color:#fff;
+ padding:5px 10px 5px 10px;
+ margin:0px;
+}
+
+.block_with_rounded_corners .bottom_right {
+ position:absolute;
+ width:6px;
+ height:6px;
+ font-size:1px;
+ bottom:-2px;
+ right:-2px;
+ background: url(../images/site/common/block_with_image_corners.gif) top left no-repeat;
+}
+.block_with_rounded_corners .bottom_left {
+ position:absolute;
+ width:6px;
+ height:6px;
+ font-size:1px;
+ bottom:-2px;
+ left:-2px;
+ background: url(../images/site/common/block_with_image_corners.gif) top right no-repeat;
+}
+.block_with_rounded_corners .top_right {
+ position:absolute;
+ width:6px;
+ height:6px;
+ font-size:1px;
+ top:-1px;
+ right:-2px;
+ background: url(../images/site/common/block_with_image_corners.gif) bottom left no-repeat;
+}
+.block_with_rounded_corners .top_left {
+ position:absolute;
+ width:6px;
+ height:6px;
+ font-size:1px;
+ top:-1px;
+ left:-2px;
+ background: url(../images/site/common/block_with_image_corners.gif) bottom right no-repeat;
+}
+
+.block_with_rounded_corners .list_decorative_dark a:hover {
+ background:transparent; /* Fixes problem in IE (dotted line disappears) */
+}
+
+/*  End of block_with_rounded_corners */

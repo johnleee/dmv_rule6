@@ -1,0 +1,36 @@
+body {
+	background:#fff url(../images/site/design01/body_background.png) repeat-x;
+}
+
+#header {
+	background:transparent url(../images/site/design01/header_bg.png) no-repeat top right;
+}
+#head_links {
+	color:#c2e5f4;
+}
+#head_links a {
+	color:#c2e5f4;
+	background-color:#012b41;
+}
+
+#textfield_container {
+	background:transparent url(../images/site/design01/header_search_textfield.png) no-repeat;
+}
+#radio_container {
+	color:#fff;
+}
+
+#radio_container label {
+	background: url(../images/site/design01/header_search_radiobutton.png) no-repeat 12px 3px;
+}
+
+#footer_1a {
+	background:#615846 url(../images/site/design01/footer_bg.png) repeat-y;
+}
+#footer_1b {
+	background:transparent url(../images/site/design01/footer_curve.png) no-repeat;
+}
+#footer_2 {
+	background:transparent url(../images/site/design01/footer_bottom_shadow.png) no-repeat;
+	color:#777777;
+}

@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.dmv.ca.gov	TRUE	/	FALSE	1999999999	AMWEBJCT!%2Fportal!JSESSIONID	fKqGT8Lf7nXkhjnpPtvc6Sz97ndPyj7m2ykMZD2YlrQCVXGJpQvm!-1177498322
+www.dmv.ca.gov	TRUE	/	FALSE	1999999999	scitemcount	0
+www.dmv.ca.gov	TRUE	/	FALSE	1999999999	PD_STATEFUL_2cd98c34-7b5a-11df-9300-001125c5ffd1	%2Fportal
+www.dmv.ca.gov	TRUE	/	FALSE	1999999999	PD_STATEFUL_8b9159fa-97a2-11df-918f-001125c5ffd1	%2Fimageserver
+www.dmv.ca.gov	TRUE	/	FALSE	1999999999	AMWEBJCT!%2Fportal!AMlocalcookieRB	lang=es-es
+

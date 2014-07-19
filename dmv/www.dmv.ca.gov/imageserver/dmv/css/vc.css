@@ -1,0 +1,45 @@
+.breadcrumbs {
+ background-color:#ecece7;
+ padding:5px 5px 5px 10px;
+}
+
+#snam {
+	font-style: normal;
+}
+#snum {}
+
+
+.new {
+	font-weight : bold;
+	font-style : italic;
+}
+
+#noindent{
+	text-indent : 0px;
+}
+
+#note {
+	text-indent: 1em;
+	font-size: 1em;
+	font-weight: bold;
+}
+.note {
+	text-indent: 1em;
+	font-size: 1em;
+	font-weight: bold;
+}
+#foot {
+	margin-left: 25px;
+	font-weight : normal;
+}
+.vcfooter{
+	font-size: 90%;
+}
+
+#vcfooter{
+	font-size: 90%;
+}
+
+
+
+

@@ -1,0 +1,624 @@
+/*
+State of California master template
+Version 2010.09.28
+*/
+
+/* *************** CSS Reset *************** */
+
+html, body, div, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li, img,
+fieldset, form, label, legend {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+
+/* *************** Outer structure *************** */
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:0.78em;
+	background:#fff url(../images/site/design01/body_background.png) repeat-x;
+	line-height: 1.2;
+}
+
+
+/* *************** Header *************** */
+
+#header {
+	width:968px;
+	height:154px;
+	margin:0 auto;
+	position:relative;
+	background:transparent url(../images/site/design01/header_bg.png) no-repeat top right;
+	z-index:10;
+}
+
+#skip_to_content a, #skip_to_content a:hover, #skip_to_content a:visited {
+	position:absolute;
+	left:0px;
+	top:-500px;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+#skip_to_content a:active, #skip_to_content a:focus {
+	position:static;
+	width:auto;
+	height:auto;
+	color:#00f;
+	background:#fff;
+	padding:1px 2px;
+} 
+
+#header .head_cagov_logo {
+	position:absolute;
+	top:55px;
+	left:50px;
+	z-index:10;
+}
+#header .head_organization_banner {
+	position:absolute;
+	top:60px; /* Adjusts the position of your organization banner */
+	left:165px; /* Adjusts the position of your organization banner */
+	z-index:20;
+}
+
+#head_links {
+	position:absolute;
+	top:46px;
+	left:561px;
+	font-size:.9em;
+	color:#c2e5f4;
+}
+#head_links a {
+	color:#c2e5f4;
+	background-color:#012b41;
+	margin:0 6px;
+}
+#head_links a:hover {
+	color:#fff;
+}
+
+
+/* Search */
+
+#head_search {
+	position:absolute;
+	left:730px;
+	top:71px;
+	z-index:10;
+}
+
+.textfield_container {
+	width:183px;
+	height:20px;
+	background:transparent url(../images/site/design01/header_search_textfield.png) no-repeat;
+	float:left;
+}
+#search_ca_textfield, #search_local_textfield {
+	border:0;
+	background-color:transparent;
+	padding:3px 0 0 8px;
+	width:175px; /* 183 - 8 */
+	color:#505050;
+	font-size:0.92em;
+}
+.submit_container {
+	position:absolute;
+	top:0px;
+	left:183px;
+}
+.javascript_off #radio_container {
+	display:none;
+}
+
+#radio_container {
+	position:absolute;
+	top:20px;
+	left:40px;
+	color:#fff;
+	font-size:.9em;
+}
+#header .radiobutton {
+	position:relative;
+	top:2px;
+}
+.javascript_on #header .radiobutton {
+	position:absolute;
+	left:-2000px;
+}
+.javascript_on #radio_container label {
+	padding:0 0 0 24px;
+	background: url(../images/site/design01/header_search_radiobutton.png) no-repeat 12px 3px;
+}
+
+.gsc-completion-container {
+	z-index:50; /* fix issue where Google autocomplete dropdown appears behind header images */
+}
+
+
+
+
+/* Navigation */
+
+#navigation {
+	position:absolute;
+	top:95px;
+	left:16px;
+	padding-left:108px; /* adjusts the horizontal position of the top-level nav */
+}
+#navigation ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#navigation li {
+	float: left;
+	background: transparent url(../images/site/common/nav_divider.png) no-repeat bottom right;
+	padding:0 0 0 0px;
+}
+#navigation li.last_nav_item {
+	background-image:none;
+}
+
+#navigation a.nav_level1_link {
+	text-decoration:none;
+	display: block;
+	padding:0 5px 0 7px; /* adjust the width of the tabs by adjusting the left & right padding */
+	margin-right:2px; /* add 1px gap on right side of tab */
+	height:23px; /* 47 - 24 */
+	color: #eee;
+	text-transform: uppercase;
+	font-size: 1.21em;
+	text-shadow: #000 1px 1px 3px; /* This is valid in CSS 2 and 3 but not 2.1 */
+	padding-top:24px;
+	white-space:nowrap; /* fix IE8 comp mode issue where nav text wraps */
+}
+
+#navigation li.last_nav_item a.nav_level1_link {
+	margin-right:0px;
+}
+
+#nav_list :first-child a.nav_level1_link {
+	padding-left:45px; /* Add padding so the entire background highlight can be seen */
+}
+
+.highlighted_nav_item a.nav_level1_link, .body_home #nav_list :first-child .nav_level1_link {
+	background: transparent url(../images/site/common/nav_highlight.png) no-repeat bottom right; /* current page item, home, spec 0-2-1, 1-3-0 */
+}
+#navigation #nav_list.unhighlight_nav_item a.nav_level1_link {
+	background-image:none; /* unhighlight current page item, spec 2-2-1 */
+}
+#header #navigation #nav_list li:hover a.nav_level1_link {
+	background: transparent url(../images/site/common/nav_highlight.png) no-repeat bottom right; /* hovered item, spec 3-2-2 */
+}
+
+
+/* *************** page_container *************** */ 
+
+#page_container {
+	background:transparent url(../images/site/common/page_content_shadow.png) repeat-y;
+	width:968px;
+	margin:-11px auto 0 auto;
+}
+
+#main_content {
+	width:936px;
+	margin:0 auto;
+	color:#505050;
+}
+
+/* *************** Banner *************** */
+
+#banner {
+	height:290px;
+	width:936px;
+	overflow:hidden;
+	margin-bottom: 37px;
+}
+
+#img_ribbon {
+	width:968px;
+	overflow:hidden;
+	height:115px;
+	background: transparent url(../images/site/home/ribbon.png) no-repeat;
+	position:absolute;
+	top:224px;
+	margin-left:-16px;
+	z-index:20;
+}
+
+
+/* *************** Main Content *************** */
+
+#main_content {
+	position:relative;
+	padding:0 0 0 0;
+}
+
+.add_padding {
+    margin-top: 0px;
+	padding: 0px 16px 16px 16px;
+}
+
+.content_left_column {
+	width:570px;
+	float:left;
+}
+.content_right_column {
+	width:320px;
+	float:left;
+	padding:0 0 0 12px;
+}
+
+.breadcrumbs {
+	padding: 5px 5px 5px 10px;
+}
+.breadcrumbs img {
+	padding: 0 4px;
+}
+
+
+/* *************** Footer *************** */
+
+.javascript_off #textsizer_container {
+	display:none;
+}
+
+
+.javascript_on #textsizer_container {
+	margin-top: -20px;
+	color:#777777;
+	padding:0 4px;
+}
+
+#footer_2 {
+	width:968px;
+	margin:0 auto;
+	background:transparent url(../images/site/design01/footer_bottom_shadow.png) no-repeat;
+	text-align:center;
+	padding:34px 0 20px 0;
+	color:#777777;
+	font-size:0.92em;
+	font-weight:bold;
+}
+
+
+#footer_2 a {
+	color:#777777;
+	padding:0 4px;
+}
+
+
+
+/* ================================================================================= */
+
+/* *************** Content *************** */
+
+ol, ul {
+	padding-left:40px;
+}
+
+li  {
+	padding-bottom:10px;
+}
+
+.half_width_column {
+	width:120px;
+	float:left;
+	margin-bottom:20px;
+}
+
+p {
+	/*margin:.4em 0; changed 11/17/10*/
+	margin:.7em 0em .9em 0em;
+}
+h2 {
+	font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  	font-size: 1.4em;
+  	font-weight: bold;
+}
+h2 img {
+	vertical-align:middle;
+	padding-right:6px;
+}
+h3 {
+	/* subpage */
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size:2em;
+	font-weight:normal;
+	background-image:url(../images/site/content/bullet_arrow_right_green.png);
+	background-repeat: no-repeat;
+	margin-top: 0.6em;
+	margin-right: 0;
+	margin-bottom: 0.6em;
+	text-indent: 1.6em;
+}
+h4 {
+	/* subpage */
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size:1.4em;
+	font-weight:normal;
+	margin:.6em 0;
+}
+h5 {
+	font-size:1.1em;
+	font-weight:normal;
+	margin:0 0 .4em 0;
+}
+
+
+a {
+	text-decoration:none;
+	color:#1f70a7;
+}
+
+/* 4/27/2010 12:01:47 PM - Rex Marzke
+   Added for Change of address.
+*/
+p.bold, span.bold {
+	font-weight: bold;
+}
+div.button_area {
+	padding-top: 10px;
+	text-align:center;
+}
+/* 4/28/2010 1:37:32 PM - Rex Marzke
+   Added for left-hand styling
+*/
+#security_logo {
+	text-align:center;
+	padding-top: 10px;
+}
+#logo {
+	text-align:center;
+	padding-top: 20px;
+}
+
+
+#app_nav ul {
+	margin: 5px 0px 5px 0px;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+.hidden { /* Hide from regular displays.  Screen readers can still read it. */
+	display:block;
+	position: absolute;
+	left: -9999px;
+	top: 0;
+}
+
+.cleaner {
+	clear:both;
+	height:2px;
+	font-size:1px;
+	border:none;
+	margin:0;
+	padding:0;
+	width:auto;
+	float:none;
+}
+
+.list_style_1 {
+	list-style-type:none;
+	padding-left:10px;
+}
+.list_style_1 li {
+	background:transparent url(../images/site/content/bullet_blue_disc.png) no-repeat 0px 2px;
+	padding:0 0 14px 18px;
+}
+.list_style_1 a {
+	font-size:1.1em;
+	font-weight:bold;
+}
+.list_style_1 div {
+	margin:.4em 0 0 0;
+}
+
+.list_style_2, .list_style_2 ul {
+	list-style-type:none;
+	padding-left:10px;
+}
+.list_style_2 li {
+	background:transparent url(../images/site/content/bullet_blue_disc.png) no-repeat 0px 2px;
+	padding:0 0 16px 18px;
+}
+.list_style_2 li li {
+	margin:6px 0 0 0;
+	padding:0 0 0 18px;
+}
+
+/* list with white > on blue disc bullets */
+#main_content .list_style_4 {
+	list-style-type:none;
+	padding-left:10px;
+	float:left;
+}
+#main_content .list_style_4 li {
+	float:none;
+	background:transparent url(../images/site/content/bullet_blue_disc.png) no-repeat 0px 1px;
+	padding:0 0 5px 18px;
+}
+
+
+.indent {
+	padding-left:42px;
+}
+
+
+/* *************** Custom styles *************** */
+
+div.warning_box, div.error_login {
+    background-color: #FFFFCC;
+    background-image: url("../images/ca_master/warning_bg.gif");
+    background-position: left top;
+    background-repeat: no-repeat;
+    border: 1px solid #E3E3E3;
+    height: 100%;
+    margin: 0 10px;
+    min-height: 30px;
+    padding: 8px 10px 8px 60px;
+}
+
+.DisplayNone 
+{
+visibility: hidden;
+}
+
+.DisplayBlock 
+{
+visibility: visible;
+}
+
+
+.box_type_a
+{
+  padding: 4px 4px 110px 4px;
+  border: 1px solid #5190bb;
+  background: #fbfdfd url(../images/site/home/testimonial_container_bg.jpg) repeat-x left top;
+  position: relative;
+  width: 80%;
+}
+
+.box_type_b
+{
+  padding: 4px 4px 4px 4px;
+  border: 1px solid #bd0000;
+  background: #fbfdfd url(../images/site/home/outage_container_bg.jpg) repeat-x left top;
+  position: relative;
+  width: 100%;
+}
+
+.box_icon
+{
+  position: absolute;
+  left: -11px;
+  top: 2px;
+}
+
+/* 5/3/2010 6:03:32 PM 
+	-- for DR - Driver Record Request
+*/
+P.red { color: #FF0000; }
+P.indent { margin-left: 30px; }
+
+.warning { color: #FF0000; }
+
+
+
+
+.blockindent2 {
+
+            padding-left: 20px;
+
+}
+
+.blockindent4 {
+
+            padding-left: 40px;
+
+}
+
+ 
+
+.paraList li {
+
+            margin-top:7px; margin-bottom:7px;         
+
+}
+
+.listTitle {
+
+            margin-left:1px; margin-bottom:30px;       
+
+}
+
+ 
+
+.indentList {
+
+            margin-top: 3px;
+
+            margin-left: 40px;
+
+            margin-bottom:3px;
+
+}
+
+ 
+
+.indentList li {
+
+            list-style-type: circle;
+
+            margin-top:3px;
+
+            margin-bottom:3px;
+
+}
+
+ 
+
+.noIndentList {
+
+            margin-top:3px;
+
+            margin-bottom:3px;
+
+}
+
+ 
+
+.noIndentList li {
+
+            margin-top:3px;
+
+            margin-bottom:3px;
+
+}
+
+table.center {
+margin-right: auto;
+margin-left: auto;
+}
+
+div.center{
+margin-right: auto;
+margin-left: auto;
+} 
+ 
+
+.center { 
+
+text-align:center;
+
+}
+
+/* Specific Content for jQuery hide/show code - Currently used on Vehicle Code TOC page and main Pubs page */
+.jqSoloShow{
+	width: 175px;
+	text-align: center;	
+	display:none;
+}
+.jqSoloHide{
+	width: 175px;
+	text-align: center;
+	display:none;
+}
+.jqHide{
+	display:none;
+}

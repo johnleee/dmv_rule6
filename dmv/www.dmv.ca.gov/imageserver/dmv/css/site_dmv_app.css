@@ -1,0 +1,258 @@
+/*---------------------------------------------*/
+/*  Blue Line beneath header                   */
+/*---------------------------------------------*/
+#blue_line { padding: 0; position:relative; background: url(../images/blue_bar_20.gif) repeat-x #033190 top; border-bottom: solid 1px #000; white-space: nowrap; text-align:right; color:#eee; font-size:.85em; padding:3px 10px 3px 3px }
+#blue_line p {padding: 0; margin: 0; }
+
+
+/*---------------------------------------------*/
+/*  Float items                                */
+/*---------------------------------------------*/
+.to_the_left { float:left }
+.to_the_right {float:right }
+
+/*---------------------------------------------*/
+/*  Spacing                                    */
+/*---------------------------------------------*/
+.pad15 { padding:15px }
+.align_w_form { margin-left:152px }
+
+/*---------------------------------------------*/
+/*  NRL on production has a caption style      */
+/*---------------------------------------------*/
+#app_content caption
+{  
+	margin-top: 20px;
+	font-weight: bold;
+	border-bottom: 2px solid #EDCF00;
+	font-size: 1.1em;
+}
+
+
+/*---------------------------------------------*/
+/*  User Control Box                           */
+/*    use styles in user_control.css           */
+/*---------------------------------------------*/
+
+/*---------------------------------------------*/
+/*  Gray Note Box                              */
+/*---------------------------------------------*/
+#middle_content .note { background: #f0f0f0; -moz-border-radius:3px; -webkit-border-radius:3px; padding:10px; margin:0 0 15px 0; border:solid 1px #e0e0e0; }
+#middle_content .note p { padding:0; margin:0 }
+
+/*---------------------------------------------*/
+/*  White Note Box                             */
+/*---------------------------------------------*/
+#middle_content .note_white { background: #fff; -moz-border-radius:3px; -webkit-border-radius:3px; padding:10px; margin:0 0 15px 0; border:solid 1px #e0e0e0; }
+#middle_content .note_white p { padding:0; margin:0 }
+
+/*---------------------------------------------*/
+/*  Yellow Warning Box                         */
+/*---------------------------------------------*/
+#app_content .warning_box_2,
+#middle_content .warning_box
+ { background: #ffc; -moz-border-radius:3px; -webkit-border-radius:3px; padding:10px; margin:0 0 15px 0; border:solid 1px #e0e0e0; }
+#app_content .warning_box_2 p,
+#middle_content .warning_box p
+ { padding:0 0 10px 0; margin:0; }
+#app_content .warning_box_2 h3,
+#middle_content .warning_box h3
+ {  font-size:1em; padding:0; margin:3px 0 10px 0; }
+#app_content .warning_box_2 ul,
+#middle_content .warning_box ul
+ { list-style:none; margin:0 0 4px 25px; padding: 0; }
+#app_content .warning_box_2 ul li,
+#middle_content .warning_box ul li
+ { padding:6px 0 2px 8px; margin:0; background:url(../images/bullet_square.gif) no-repeat left 12px; }
+
+/*---------------------------------------------*/
+/*  Green Successful Box                       */
+/*---------------------------------------------*/
+#middle_content .happy_note { background: #f0ffdf; -moz-border-radius:3px; -webkit-border-radius:3px; padding:10px; margin:0 0 15px 0; border:solid 1px #e0e0e0; }
+#middle_content .happy_note p { padding:0; margin:0 0 10px 0; }
+#middle_content .happy_note h3 {  font-size:1em; padding:0; margin:3px 0 10px 0; color:#093 }
+
+/*---------------------------------------------*/
+/*  Small Help Box                             */
+/*---------------------------------------------*/
+.help_box 
+	{ background: #f0f0f0; -moz-border-radius:3px; -webkit-border-radius:3px; padding:10px; margin:6px 0 15px 0; border:solid 1px #e0e0e0; width:160px }
+.help_box_no_shade
+	{ background: #FFFFFF; -moz-border-radius:3px; -webkit-border-radius:3px; padding:10px; margin:6px 0 15px 0; border:solid 1px #e0e0e0; width:160px }
+.help_box_no_shade p,
+.help_box p 
+	{ padding:0; margin:0; font-size:.85em }
+.help_box_no_shade h3,
+.help_box h3 
+	{  font-size:.85em; padding:0; margin:3px 3px 0 3px }
+.help_box_no_shade ul,
+.help_box ul 
+	{ list-style:none; margin:7px 0 4px 5px; padding: 0; font-size:.85em }
+.help_box_no_shade ul li,
+.help_box ul li 
+{ padding:6px 0 2px 8px; margin:0; background:url(../images/bullet_square.gif) no-repeat left 12px; }
+
+/*---------------------------------------------*/
+/*  Tabular Content                            */
+/*---------------------------------------------*/
+
+.table_a { padding:0; margin:15px 0 15px 0; border-top:solid 1px #e0e0e0; border-left:solid 1px #e0e0e0; background:#fff }
+.table_a td { border-right:solid 1px #e0e0e0; border-bottom:solid 1px #e0e0e0; padding:8px; vertical-align:top; }
+.table_a th { background:#e3e9ef; border-right:solid 1px #e0e0e0; border-bottom:solid 1px #e0e0e0; padding:8px; vertical-align:top; text-align:left; }
+.table_a tr:hover { background:#fefef2 }
+
+.table_b { padding:0; margin:15px 0 15px 0; border:solid 1px #e0e0e0; border-bottom:none; }
+.table_b td { border:none; border-bottom:solid 1px #e0e0e0; padding:8px; vertical-align:top; }
+.table_b th { border:none; border-bottom:solid 1px #e0e0e0; padding:8px; vertical-align:top; text-align:right; }
+.table_b tr:hover { background:#fefef2 }
+
+/*---------------------------------------------*/
+/*  Buttons or Links                           */
+/*---------------------------------------------*/
+
+a.remove { padding-left:18px; background:url(../images/ico/remove.gif) no-repeat left; color:#c00 }
+a.remove:hover { text-decoration:none }
+
+a.cart { padding-left:18px; background:url(../images/ico/cart.gif) no-repeat left; font-size:.9em }
+
+a.print { padding-left:18px; background:url(../images/ico/print.gif) no-repeat left; font-size:.9em; }
+
+/* default buttons */
+/* 5/3/2010 8:25:17 PM
+   buttons style in this CSS does not match VVV
+   in addition, not all the apps use these, so I'm deleting them
+   -- wait - Start.jsp has HTML that is one button and one link 
+       and they only look alike because of these styles.
+*/
+.buttons a, .buttons button{ display:block; float:left; margin:0 0 10px 7px; background:url(../images/btn_gray_bg.gif) repeat-x #b2b2b2; border:1px solid #666; border-top:1px solid #e0e0e0; border-left:1px solid #e0e0e0; font-size:100%; line-height:130%; text-decoration:none; font-weight:bold; color:#565656; cursor:pointer; padding:5px 10px 6px 7px; -moz-border-radius:3px; -webkit-border-radius:3px; }
+/* */
+/* the following is for IE6 */
+/* */
+.buttons button{ width:auto; overflow:visible; padding:4px 10px 3px 7px; }
+/* */
+/* the following is for firefox & Safari */
+/* */
+.buttons button[type]{ padding:5px 10px 5px 7px; line-height:17px; }
+/* */
+/* the following is for IE7 */
+/* */
+*.big_button:first-child+html button[type]{ padding:4px 10px 3px 7px;  }
+/* */
+/* the following is for all  */
+/* */
+.buttons button img, .buttons a img { 
+	margin:0 3px -3px 0 !important; 
+	padding:0; border:none; 
+	width:16px; 
+	height:16px;
+	}
+/* */
+/* neutral buttons */
+/* */
+button.big_button:hover, 
+.buttons a:hover{ background:url(../images/btn_gray_hover_bg.gif) repeat-x #d7d7d7; color:#336699; }
+/* */
+
+/* positive buttons */
+/* */
+button.positive, .buttons a.positive{ color:#ccc; background:url(../images/btn_blue_bg.gif) repeat-x #04308d; border:1px solid #001136; border-top:1px solid #1921FF; border-left:1px solid #1921FF;}
+.buttons a.positive:hover, button.positive:hover{ background:url(../images/btn_blue_hover_bg.gif) repeat-x #1241a5; color:#ccc;}
+/* */
+/* negative buttons */
+/* */
+.buttons a.negative:hover, button.negative:hover{ color:#d12f19; }
+/* */
+
+/*---------------------------------------------*/
+/*  Buttons 2 and 3                            */
+/*---------------------------------------------*/
+.buttons_2, .buttons_3 {
+}
+.buttons_2 input.non_first,
+.buttons_3 input.non_first { margin-left: 20px; }
+
+.buttons_3 input.first,
+.buttons_3 input.non_first {
+	background-color: #E6D8AE;
+}
+
+
+
+
+/*---------------------------------------------*/
+/*  Text                                       */
+/*---------------------------------------------*/
+.txt_red { color:#c00 }
+.txt_yellow { color:#ca8b00 }
+P.red_center {
+	color: #FF0000;
+	text-align: center;
+}
+
+/*---------------------------------------------*/
+/*  Forms                                      */
+/*---------------------------------------------*/
+
+fieldset { padding: 10px; border:none; }
+/* label { 
+	width:140px; clear:left; float:left; margin-right:15px; text-align:right; font-size:.9em; vertical-align: middle; } */
+label.label_right { 
+	width: auto; 
+	clear: none; 
+	float: none; 
+	margin-right:10px; 
+	text-align:left; 
+	font-size:.9em; 
+	vertical-align: middle; }
+label.checkbox_radio { margin:0;padding:0;  float:none }
+textarea.app_ver, input.app_ver {padding: .2em; margin: -.2em .5em 1.417em -.5em; border: 1px solid #dedede; width:190px }
+textarea.app_ver_error, input.app_ver_error {padding: .2em; margin: -.2em .5em 1.417em -.5em; background:#f4de64; border: 1px solid #cc9e34; width:190px }
+textarea.app_ver:focus, select.app_ver:focus, input.app_ver:focus {border: 1px solid #666;}
+select.app_ver {padding: .2em; margin: -.2em .5em 1.417em -.5em; border: 1px solid #dedede;}
+select.app_ver_error {padding: .2em; margin: -.2em .5em 1.417em -.5em; background:#f4de64; border: 1px solid #cc9e34; }
+
+input.cvv { width:30px; }
+input.zip_code { width:50px; }
+.help_txt { color:#777; font-size:.9em; line-height:11px }
+
+/*---------------------------------------------*/
+/*  Modal Content                              */
+/*---------------------------------------------*/
+
+.jqmWindow { display: none; position: absolute; top: 12%; left: 50%; margin-left: -19em; width: 38em; background: #fff; padding: 12px; -moz-border-radius:3px; -webkit-border-radius:3px; border-bottom: 1px solid #ccc; }
+.jqmWindow h4 { font-size:1em; padding:0; margin:10px 0 15px 0; }
+.jqmOverlay { background-color: #000; }
+a.jqmClose {border:none}
+
+/*---------------------------------------------*/
+/*  Panels  (See Confirmation Page)            */
+/*---------------------------------------------*/
+fieldset.panel { padding:0 15px 5px 15px; margin:0 0 15px 0; border:solid 1px #e0e0e0; -moz-border-radius:3px; -webkit-border-radius:3px; }
+fieldset.panel legend { color:#093; font-weight:bold; }
+
+/* remove border around the P, since the fieldset already has one */
+fieldset.panel_error p { border: 1px none #FF0000; margin-top: 10px;}
+fieldset.panel_error { border-color:#f4de64; }
+fieldset.panel_error legend { color:#000000; font-weight: bold; }
+
+fieldset.panel_negative { border-color:#c00; }
+fieldset.panel_negative legend { color:#c00 }
+
+/*---------------------------------------------*/
+/*  added for shopping cart                    */
+/*---------------------------------------------*/
+#card_info {
+				margin: 0px 10px 10px 10px;
+			}
+h4.nospace {
+				margin-top: 0px;
+			}
+/*---------------------------------------------*/
+/*  e-mail notfication                         */
+/*---------------------------------------------*/
+pre.email { 
+	white-space: pre-line; 
+	font-size: 1.1em; 
+	margin-left: 10px;
+	line-height: 1.1em;
+}	
